@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb295b49b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certifications</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <center><i class="fa-solid fa-xmark" onclick="closemenu()"></center></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Avilasha</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Portfolio-4.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Avilasha a professional with strong leadership, teamwork, communication, and active
+                        listening skills. I'm passionate about Java and bring technical expertise and innovative
+                        solutions to my projects. I'm fluent in English, Hindi, and Bengali. I love travelling and
+                        photography which enriches my creativity and perspective.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java, SQL, C, Python, C++</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS, Javascript, React Js</li>
+                            <li><span>Related Coursework</span><br>OOPs, Operating Systems, Data Structures, Computer
+                                Networking</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sept 2023-Oct 2023</span><br>CodeClause Pvt Ltd-Python Development Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Kalinga Institute of Industrial Technology - 8.6 CGPA</li>
+                            <li><span>2019-2021</span><br>Techno India Group Public School - 82%</li>
+                            <li><span>2008-2019</span><br>St.Anthony's School - 88%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>AWS Academy Graduate</h2>
+                    <p>June 2024</p>
+                    <a href="https://drive.google.com/file/d/14izgI2iR_sYuuOP8Ywz9Y4Ahg2nIYUyy/view?usp=sharing">Learn
+                        more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Hackerrank SQL Intermediate</h2>
+                    <p>August 2023</p>
+                    <a href="https://www.hackerrank.com/certificates/d4dfa2ae599c">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-hackerrank"></i>
+                    <h2>Hackerrank Problem Solving Intermediate</h2>
+                    <p>July 2023</p>
+                    <a href="https://www.hackerrank.com/certificates/6dfd67c21664">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Chat with Multiple PDF</h3>
+                        <p>This project utilizes Streamlit to create a web application that allows users to chat about
+                            multiple PDF documents.Enabled chat functionality across multiple PDFs using FAISS vector
+                            embeddings.</p>
+                        <a href="https://pdf-convo-app.streamlit.app/"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Research Paper on: Smart Farming using IOT</h3>
+                        <p>This paper presents a comprehensive overview of Smart Farming using Internet of
+                            Things.Developed soil health metrics tracking method and conducted graphical comparisons of
+                            crop types based on diverse environmental factors.
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10425922&isnumber=10425793">
+                            <i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Autism Detection using ML</h3>
+                        <p>Developed a classification model for early detection of ASD in individuals through feedback
+                            analysis. Implemented various classification algorithms like KNN and Naive Bayes, to
+                            accurately identify signs of ASD.
+                        </p>
+                        <a href="https://colab.research.google.com/drive/19RILlEeApicpVQSb2a0aKAm7tnYIO691?usp=sharing">
+                            <i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>avilasha275@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8420421711</p>
+                    <p><a href="https://www.linkedin.com/in/avilasha/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/avilasha_?igsh=MWgwNXNyZGVlbHR6aQ%3D%3D&utm_source=qr"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Avilasha27"><i class="fa-brands fa-github"></i></a>
+                    </p>
+                    <a href="images/My-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
